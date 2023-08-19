@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <main>
+          <nav class="nav">
+              <h1>Personal Blogging App</h1>
+              <a href="../Login page/index.html"><button>Login</button></a>
+          </nav>
+          <h1 class="text">Sign Up</h1>
+          <div class="Form">
+            <input id="SignupFirstname" type="text" placeholder="Firstname" required minlength="3" maxlength="20">
+            <br>
+            <input id="SignupLastname" type="text" placeholder="Lastname" required minlength="1" maxlength="20">
+            <br>
+            <input id="Signupemail" required type="email" placeholder="Email">
+            <br>
+            <input id="Signuppassword" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" type="password" placeholder="Password">
+            <br>
+            <input placeholder="Repeat-password" required name="Repeat-pass" type="password" id="Repeat-pass">
+            <br>
+            <button id="signupBtn">Signup</button>
+          </div>
+        </main>
+
+
+        <script type="module" src="app.js"></script>
+
+  
+  
+</body>
+</html>

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+  }
+  .nav h1{
+    margin-left: 150px;
+    font-family: sans-serif;
+  }
+  .nav a{
+    margin-right: 150px;
+    font-family: sans-serif;
+  }
+  .nav button{
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+ 
+}
+.text{
+    font-size: 3rem;
+    background-color: rgb(243, 243, 244);
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    background: rgb(243, 243, 244);
+    margin-top: 100px;
+    position: absolute;
+    left: 38%;
+    bottom: 20%;
+    padding: 80px;
+  }
+  .Form input{
+    padding: 5px;
+  }
+  .Form #LoginBtn{
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  

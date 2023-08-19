@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="dashboardstyle.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Personal Blogging App</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-end">
+              <li class="nav-item">
+                <a class="nav-link" href="../profile/profileindex.html" id="username">User Name</a>
+              </li>
+              <a class="nav-link" id="LogoutBtn">Logout</a>
+              <!-- <li class="nav-item">
+                <a class="nav-link" id="LogoutBtn">Logout</a>
+              </li> -->
+          </div>
+        </div>
+      </nav>
+      <header>
+        <h1>Dashboard</h1>
+    </header>
+    <main>
+        <!-- Blog post form -->
+        <div id="blogForm">
+            <input type="text" id="Givetitle" minlength="5" maxlength="50" placeholder="Title" required>
+            <textarea id="Givecontent" minlength="100" maxlength="3000" placeholder="Whats in your Mind" required></textarea>
+            <button type="submit" id="Publish">Publish blog</button>
+        </div>
+    </main>
+
+    <h1 class="blog">My Blog</h1>
+    <div class="postupload">
+        <div class="post">
+          <div class="mypost">
+            <span style="display: flex;flex-direction: row;">
+              <!-- <img id="img" src="../assesst/c8dfc008-2a7f-4e3e-a653-1b6ef2d093ec-removebg-preview.png" alt="Post Image"> -->
+              <!-- <span style="display: flex;flex-direction: column;">
+                <h2 id="postTitle">Post Title</h2>
+                <p id="postDate"><span class="username">username</span> - August 19, 2023</p>
+                </span>
+              </span> -->
+              <p id="PostDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <!-- <button id="deleteBtn">Delete</button>
+              <button id="EditBtn">Edit</button> -->
+            </div>
+          </div>
+    </div>
+    
+
+    <div class="modal hidden">
+      <input type="text" id="UpdateTitle" placeholder="UpdateTitle">
+      <textarea name="" id="UpdateDescription" placeholder="UpdateDescription" cols="30" rows="10"></textarea>
+      <button id="UpdateBtn">Update Blog</button>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="dashboardapp.js"></script>
+</body>
+</html>
